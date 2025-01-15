@@ -26,7 +26,7 @@ module "kms" {
 module "eks" {
   source            = "./modules/eks"
   tenant_name       = var.tenant_name
-  kms_key_arn       = module.kms.kms_key_id
+  kms_key_arn       = module.kms.kms_key_arn
   vpc_id            = module.vpc.vpc_id
   public_subnet_ids = module.vpc.public_subnets
   private_subnet_ids = module.vpc.private_subnets

@@ -20,5 +20,5 @@ output "eks_cluster_name" {
 # }
 
 output "kms_key_id" {
-  value = module.kms.kms_key_id
+  value = module.kms.kms_key_arn
 }
